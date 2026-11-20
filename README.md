@@ -10,3 +10,7 @@ Run the branch tests with Python 3.11 or later:
 python -m unittest discover -s tests -v
 ```
 
+
+## Live bounty targets (main branch)
+
+`src/bountybench_text.py` has three real bugs that are open as live Bounty Bench bounties: `truncate_words` keeps one word too few, `parse_duration` ignores everything after the first unit (so `1h30m` returns 3600), and `title_case` capitalizes letters after an apostrophe (`o'neil's` becomes `O'Neil'S`). Each has a GitHub issue with the expected behavior.
